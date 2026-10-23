@@ -5,6 +5,7 @@
 
 #include "funkcije.h"
 
+//1 zadatak
 void odvoji(std::string recenica, std::string* odvojeni){
     int j = 0;
     std::string rijec = "";
@@ -57,6 +58,7 @@ void insertujNaKrajListe(Node*& lista, Node*& kraj, std::string str){
     kraj = novi;
 }
 
+//dodatak 1 zadatka
 Node* odvojiUlistu(std::string str){
     Node* lista{nullptr};
     std::string rijec = "";
@@ -74,6 +76,7 @@ Node* odvojiUlistu(std::string str){
     return lista;
 }
 
+//2 zadatak
 bool parkiraj(double arr[]){
     for(int i = 0; i < 4; i++){
         if(i < 2){
@@ -96,6 +99,7 @@ bool parkiraj(double arr[]){
     return true;
 }
 
+//3 zadatak
 std::string dekadniU(int broj, int baza){
     if(broj == 0) 
         return "0";
@@ -126,6 +130,8 @@ std::string dekadniU(int broj, int baza){
     return rezultat;
 }
 
+
+//6 zadatak
 std::string sortirajString(std::string str){
     int n = str.size();
     for(int i = 0; i < n - 1; i++){
@@ -138,6 +144,7 @@ std::string sortirajString(std::string str){
     return str;
 }
 
+//6 zadatak
 std::string* anagram(std::string str[]){
     auto rezultat = new std::string[100];
     int brojRijeci = 0;
@@ -158,6 +165,7 @@ std::string* anagram(std::string str[]){
     return rezultat;
 }
 
+//7 zadatak
 std::string prefiks(std::string str[]){
     if(str[0].empty()) return "";
 
@@ -170,6 +178,8 @@ std::string prefiks(std::string str[]){
     return pref;
 }
 
+/*Zadaci od profesora^^^*/
+/*ostali zadaci ↓↓↓↓*/
 bool palindrom(std::string str){
     int n = str.size();
     for(int i = 0; i < n/2; i++){
