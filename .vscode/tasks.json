@@ -1,0 +1,30 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build funkcije",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-std=c++11",
+                "-g",
+                "${workspaceFolder}/main.cpp",
+                "${workspaceFolder}/funkcije.cpp",
+                "-o",
+                "${workspaceFolder}/program"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Builds main.cpp and funkcije.cpp together."
+        }
+    ],
+    "version": "2.0.0"
+}
